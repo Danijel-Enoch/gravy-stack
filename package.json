@@ -9,6 +9,7 @@
 		"build": "npx tsc",
 		"start": "node dist/bot.js",
 		"prod": "bun run build && bun run start",
+		"gen:commands": "bun run  cli/GenerateCommands.ts",
 		"generate-types": "bunx typechain --target ethers-v6 --out-dir types/contracts 'web3/abis/betting.json'"
 	},
 	"keywords": [],
